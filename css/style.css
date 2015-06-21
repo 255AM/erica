@@ -1,0 +1,150 @@
+html{
+    height:100%;
+    width:100%;
+}
+
+header {
+    position:relative;
+    display:block;
+    max-width:100%;
+    height:8%;
+    padding: 1rem 5rem;
+    color:pink;
+    overflow:hidden;
+    background-color: white;
+    text-align: center;
+}
+header h1 {
+    line-height: 45px;
+    font-size: 3rem;
+    margin: 0; 
+    display: inline;
+    float: left;
+    color: gray;
+    margin-left: 5rem;
+}
+nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    float:right;
+}
+
+nav  li {
+    position:relative;
+    display:inline-block;
+    list-style-type: none;
+    font-family: "Open Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+    color: gray;
+    margin-right: 5rem;
+}
+nav li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    
+}
+nav > li > a:hover,
+nav > li > a:focus {
+    text-decoration: none;
+    background-color: black
+    
+}
+
+body {
+    background-color: white;
+    height:100%;
+    width:100%;
+    
+}
+
+img{
+	
+    margin-left:;
+    margin-right: ; 
+    border:1px solid #021a40;
+}
+
+img.erica{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 5rem;
+}
+
+.quicksummary{
+     display: block;
+    margin-left: 10rem;
+    margin-right: 10rem; 
+    margin-top: 5rem;
+}
+
+.about{
+    display: block;
+    margin-left: 10rem;
+    margin-right: 10rem; 
+    margin-top: 5rem;
+}
+ 
+div {
+    width:100%;
+  height: 100%;
+float:left;
+position: relative;
+overflow:;
+}
+
+.resume-link{
+    color: black;
+    text-decoration:underline;
+}
+ 
+.contents{
+	margin-left:08.5rem;
+}
+
+a.darken {
+    display: inline-block;
+    background: black;
+    padding: 0;
+    position: relative;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.5;
+            
+}
+
+a.darken span
+{
+    font-size: 150% ;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0);
+     -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken:hover span
+{
+    color: rgba(255, 255, 255, 1);
+     -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
