@@ -55,6 +55,7 @@ body {
     background-color: white;
     height:100%;
     width:100%;
+    overflow: hidden;
     
 }
 
@@ -91,7 +92,7 @@ div {
   height: 100%;
 float:left;
 position: relative;
-overflow:;
+overflow:hidden;
 }
 
 .resume-link{
@@ -101,6 +102,7 @@ overflow:;
  
 .contents{
 	margin-left:08.5rem;
+    overflow:auto;
 }
 
 a.darken {
@@ -148,3 +150,35 @@ a.darken:hover span
          -o-transition: all 0.2s linear;
             transition: all 0.2s linear;
 }
+.contacts{
+    height: 25rem;
+}
+
+.contact_title{
+   position: relative;
+    height: auto;
+    text-align: center;
+   top: 30%;
+   font-size: 300%;
+  font-weight: 600;
+    
+}
+
+.contact-icons{
+    position: relative;
+   display: block;
+    margin-left: 20rem;
+    margin-top: 19rem;
+    padding-left: 0;
+    
+}
+    
+ .contact-icons a{  
+     margin: 5rem;
+    
+     
+   
+    
+}
+    
+    
