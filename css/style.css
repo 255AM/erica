@@ -1,33 +1,43 @@
 html{
-    height:100%;
+    height:80%;
     width:100%;
+    overflow-y: scroll;
 }
 
 header {
     position:relative;
-    display:block;
-    max-width:100%;
-    height:8%;
-    padding: 1rem 5rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    max-width:90%;
+    height:5rem;
+    padding:0;
     color:pink;
-    overflow:hidden;
     background-color: white;
     text-align: center;
+    border-bottom: solid;
+    border-width: 1px;
+    border-bottom-color: darkolivegreen;
 }
 header h1 {
-    line-height: 45px;
+    font-family: 'Poiret One', cursive;
+    font-weight: 400;
     font-size: 3rem;
     margin: 0; 
-    display: inline;
     float: left;
     color: gray;
-    margin-left: 5rem;
+    margin-left: 6.5rem;
 }
 nav {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    float:right;
+    position:relative;
+    height:8%;
+    margin-top: -4rem;
+    margin-right: 6rem;
+    max-width:45%;
+    padding:0;
+    color:pink;
+    background-color: white;
+    float: right;
 }
 
 nav  li {
@@ -35,8 +45,9 @@ nav  li {
     display:inline-block;
     list-style-type: none;
     font-family: "Open Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+    font-weight:lighter;
     color: gray;
-    margin-right: 5rem;
+    margin-right: 7rem;
 }
 nav li > a {
     position: relative;
@@ -55,29 +66,30 @@ body {
     background-color: white;
     height:100%;
     width:100%;
-    overflow: hidden;
+    margin:0;\
+    
     
 }
 
 img{
-	
-    margin-left:;
+	margin-left:;
     margin-right: ; 
     border:1px solid #021a40;
 }
 
-img.erica{
+.erica{
     display: block;
     margin-left: auto;
     margin-right: auto; 
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+    
 }
 
-.quicksummary{
-     display: block;
+.summary{
+    display: block;
     margin-left: 10rem;
     margin-right: 10rem; 
-    margin-top: 5rem;
+    margin-top: 2.5rem;
 }
 
 .about{
@@ -87,12 +99,13 @@ img.erica{
     margin-top: 5rem;
 }
  
-div {
-    width:100%;
-  height: 100%;
-float:left;
-position: relative;
-overflow:hidden;
+.resume{
+    height: 100%;
+    width: 88.3%;
+    margin-left: 5rem;
+    
+     
+    
 }
 
 .resume-link{
@@ -101,8 +114,7 @@ overflow:hidden;
 }
  
 .contents{
-	margin-left:08.5rem;
-    overflow:auto;
+    margin-left: 9rem;
 }
 
 a.darken {
@@ -127,8 +139,9 @@ a.darken:hover img {
             
 }
 
-a.darken span
-{
+a.darken span{
+    font-family: 'Cabin', sans-serif;
+    font-style: italic;
     font-size: 150% ;
     position: absolute;
     top: 10px;
@@ -141,8 +154,7 @@ a.darken span
             transition: all 0.2s linear;
 }
 
-a.darken:hover span
-{
+a.darken:hover span{
     color: rgba(255, 255, 255, 1);
      -webkit-transition: all 0.2s linear;
        -moz-transition: all 0.2s linear;
@@ -150,35 +162,34 @@ a.darken:hover span
          -o-transition: all 0.2s linear;
             transition: all 0.2s linear;
 }
-.contacts{
-    height: 25rem;
-}
 
-.contact_title{
-   position: relative;
-    height: auto;
-    text-align: center;
-   top: 30%;
-   font-size: 300%;
-  font-weight: 600;
-    
-}
-
-.contact-icons{
+.bubble{
+    margin-top: 4rem;
     position: relative;
-   display: block;
-    margin-left: 20rem;
-    margin-top: 19rem;
-    padding-left: 0;
-    
+    margin-left: 10rem;
+    border: none;
+}
+
+.contacticons{
+    border: none;
+    padding: 2rem;
+}
+
+.contacts{
+    position: relative;
+    margin-top: -19rem;
+    margin-left: 25rem;
 }
     
- .contact-icons a{  
-     margin: 5rem;
+ 
+
+    
+    
+
     
      
    
     
-}
+
     
     
