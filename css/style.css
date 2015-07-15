@@ -6,6 +6,8 @@ html{
     overflow-y: scroll;
 }
 
+
+
 @media screen and (min-width:300px){
 
  
@@ -13,7 +15,6 @@ html{
       .title {
         text-decoration: none;
         margin: 0rem;
-        color: grey;
         font-family: 'Poiret One', cursive;
         font-size: 2rem;
         text-align: center;
@@ -21,7 +22,9 @@ html{
         
       }
       .title a{
+        color: gray;
         text-decoration: none;
+        
       }
  
       nav ul{
@@ -44,6 +47,7 @@ html{
 
       nav  li a{
         text-decoration: none;
+        color: gray;
       }
     
       .indexpic{
@@ -92,6 +96,13 @@ html{
     font-size: .8rem;
 }
     
+    .resume{
+    width: 100%;
+    height: 27rem;
+    overflow:visible;
+     
+}
+    
 }
 
 @media screen and (min-width:1030px) {
@@ -105,7 +116,7 @@ html{
         color: grey;
         font-family: 'Poiret One', cursive;
         font-size: 3rem;
-        padding: 0;
+        padding-bottom: 4rem;
         
       }
       .title a{
@@ -172,7 +183,7 @@ html{
 .erica{
     position: absolute;
     margin-top: 9rem; 
-    margin-left: 3rem;
+    margin-left: 32rem;
     display: block;
     padding: 0; 
     max-width: 100%;
@@ -181,7 +192,7 @@ html{
      position: absolute;
     margin-left: 5rem;
     margin-right: 5rem;
-    margin-top: 28rem;
+    margin-top: 26rem;
 }
 
 .about{
@@ -192,8 +203,10 @@ html{
     
 }
     
-
+.resume{
     
+    height: 27rem;
+     
 }
 
      
@@ -201,11 +214,7 @@ html{
 
  
  
-.resume{
-    height: 100%;
-    width: 88.3%;
-    margin-left: 5rem;
-    
+ 
      
     
 }
@@ -214,9 +223,29 @@ html{
     color: black;
     text-decoration:underline;
 }
+
+.stories{
+    margin:0;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:0;
+}
+
+.stories a{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
  
 .contents{
-    margin-left: 8rem;
+    
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 a.darken {
@@ -267,24 +296,11 @@ a.darken:hover span{
 
  
  
-.contacts {
  
-   
-    width: 100%;
-    height: 100%; 
-    position:fixed;
-    
-     
+.contacts{
+    margin-top:10rem;
 }
-
-.contacts ul{
-    position: relative;
-    text-align: center;
-    padding: 0;
-    height:100%;
-    width: 100%;
-    margin-top: 15%;
-}
+ 
 
 .contacts ul li{
      
@@ -295,24 +311,15 @@ a.darken:hover span{
 .contacts ul li a{
     padding: 0; 
     text-decoration: none;
-}
+}   
     
 
  .iconwrapper {
     
     display: inline-block;
     width: 12%;
-    height: auto%;
+    height: auto;
     padding 0;
-     
     position: relative;
 }
-.icon {
-    width: 100%;
-    height: 100%;
-    padding-right: 2rem;
-}  
-    
-
-    
-    
+ 
