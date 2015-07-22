@@ -1,0 +1,25 @@
+/* CSS used here will be applied after bootstrap.css */
+.navbar-default {
+    margin: 2%;
+    background-color: white;
+    
+}
+.navbar-brand{
+  	font-size: 5rem;
+}
+.navbar-nav{
+    float: right;
+    font-size: 2rem;
+}
+
+    
+.titleimg{
+        margin-top: 2%;
+    	display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+.summary{
+  margin: 2% 4%;
+  }

@@ -1,325 +1,240 @@
+/* CSS used here will be applied after bootstrap.css */
 
-
+/* CSS used here will be applied after bootstrap.css */
 html{
-    height:99%;
-    width:100%;
-    overflow-y: scroll;
+     height:100%;
+    
+     
+    
+     
+     
+     
+     
 }
 
+.navbar{ 
+     background-color: #C7C3BD;
+    background-image: none;
+    opacity: .8;
+    margin-bottom: 0;
+     
+}
 
-
-@media screen and (min-width:300px){
-
- 
- 
-      .title {
-        text-decoration: none;
-        margin: 0rem;
-        font-family: 'Poiret One', cursive;
-        font-size: 2rem;
-        text-align: center;
-        padding: 0;
-        
-      }
-      .title a{
-        color: gray;
-        text-decoration: none;
-        
-      }
- 
-      nav ul{
-        font-size: .8rem;
-        margin-top: 1rem;
-        text-align: center;
-        font-weight:100;
-        padding: 0;
-         
-      }
-
- 
-      nav  li {
-         
-        color:gray;
-        display:block;
-        font-weight:lighter;
+.navbar-default {
+    font-family: 'Poiret One', cursive;  
+    text-decoration: none;
    
-      }
-
-      nav  li a{
-        text-decoration: none;
-        color: gray;
-      }
-    
-      .indexpic{
-        position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100%;
-    
-     }
-    
-    .summaryholder{
-     
-    margin-left: 1rem;
-    margin-right: 1rem;
+}
+.navbar-default .navbar-brand  {
+  color: #000;
+  text-align: center;    
 }
 
-    .summary{
-     
-    margin-left: auto;
-    margin-right: auto; 
-    
-    font-size: .8rem;
+
+
+.navbar-default .navbar-nav li a {
+  color: #000;
+  font-weight: 800;
+
 }
-    
-    .erica{
-        position: relative;
-        display: block;
+.navbar-brand{
+  	font-size: 5rem;
+    font-weight: 800;
+    margin-left: 1rem;
+
+     
+}
+.navbar-nav{
+    float: right;
+    font-size: 2rem;
+}
+
+     
+.titleimg{
+        margin-top: 2%;
+    	display: block;
         margin-left: auto;
         margin-right: auto;
-        
+      }
+
+ 
+.row ul li{
+    display:inline;
+  }
+
+
+.titlebody {
+	background: url('../img/louisville%20coal.jpg') no-repeat center center fixed;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+	color:#fff;
+  	background-color:#333;
     
-     }
+  	 
+}
+ 
     
-    .aboutholder{
+.summaryholder{
+    width: 100%;
+    background-color:rgba(0,0,0,0.0);
+}
     
-    margin-left: 1rem;
-    margin-right: 1rem;
+
+  .summary{
+    color: white;
+    margin-top:  24%;
+      margin-bottom: 0;
+    margin-left: 2%;
+    margin-right: 60%;
+    text-align: left;
+    font-size: 1.6rem;
+     
+
+    
+}
+   
+    
+.row{
+     
+     
+}
+ 
+.col-md-5{
+    height: 100%;
+    padding:0;
+    margin:0;
+    }
+.col-md-7{
+    margin:0; 
+    padding:0;
+    background-color: black;
+    color:antiquewhite;
 }
 
     .about{
-     
-    margin-left: auto;
-    margin-right: auto; 
-    
-    font-size: .8rem;
-}
-    
-    .resume{
-    width: 100%;
-    height: 27rem;
-    overflow:visible;
-     
-}
-    
-}
-
-@media screen and (min-width:1030px) {
-   /* Desktop styles */
-
-      .title {
-        text-decoration: none;
-        margin-top: 2rem;
-        float: left;
-        margin-left: 2rem;
-        color: grey;
-        font-family: 'Poiret One', cursive;
-        font-size: 3rem;
-        padding-bottom: 4rem;
-        
-      }
-      .title a{
-        w
-        text-decoration: none;
-      }
- 
-      nav ul{
-        margin-top: 3.5rem;  
-        font-weight:100;
-        padding: 0;
-        float:right;
-        margin-right: 2rem;
+        margin: 4%;
+        background-color: black;
          
-      }
+    }
+    
+ .aboutbody{
+     
+     margin:0;
+     padding: 0;
+     overflow-y: scroll;
+     
+ }
+
+
+.contactbody {
+	background: url("../img/current.JPG") no-repeat center center fixed;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+	color:#fff;
+  	background-color:#333;
+}
 
  
-      nav  li {
-         
-        font-size: 1rem;
-        color:gray;
-        display:inline;
-        font-weight:lighter;
-        padding-left: 2rem;
-        padding-right: 0;
-        
-   
-      }
 
-      nav  li a{
-        text-decoration: none;
-      }
+ 
 
-  
-
-
-    .indexpic{
-    position: absolute;
-    margin-top: 9rem; 
-    margin-left: 27rem;
-    display: block;
-    padding: 0; 
-    max-width: 100%;
-         
-         
+.carousel .item {
+    width: 100%; /*slider width*/
+    height: 100%; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+    height: auto;
+}
+/*add some makeup*/
+.carousel .carousel-control {
+    background: none;
+    border: none;
     
-     }
+}
+
+ 
+
+.carousel-caption{
+        color:silver;
+    background-color:rgba(0,0,0,0.7);
+    padding-top: 0;
+         
+        
+}
+    
+
+.contactlist{
+    list-style-type: none;
+    margin-top: 12%;
+}
+     
+ .contactlist li{
+     display: inline;
+ }
+     
+
+
+img{
+     background-color: rgba(255,255,255,0.3)
+ }
+ 
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    
+   .img-responsive{
+       margin-left:auto;
+       margin-right:auto;
+}
+
+    .navbar-brand{
+  	font-size: 3rem;
+    font-weight: 800;
+    margin-left: 1rem;
+    }
     
     .summaryholder{
-    position: absolute;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-top: 28rem;
+    width: 100%;
+    background-color:rgba(0,0,0,0.4);
+}
+    
+
+  .summary{
+    color: white;
+    margin-top:  0%;
+      margin-bottom: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: left;
+    font-size: 1rem;
+     
+
     
 }
-
-    .summary{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    font-size: 1rem;
+    
+    .aboutbody{
+      
+     margin:0;
+     padding: 0;
+     overflow-y: auto;
     }
-
-.erica{
-    position: absolute;
-    margin-top: 9rem; 
-    margin-left: 32rem;
-    display: block;
-    padding: 0; 
-    max-width: 100%;
-}
-    .aboutholder{
-     position: absolute;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-top: 26rem;
-}
-
-.about{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    font-size: 1rem;
     
-}
-    
-.resume{
-    
-    height: 27rem;
-     
-}
+     .about{
+        margin: 0%;
+        background-color: black;
+     }
 
-     
-
-
- 
- 
- 
-     
-    
-}
-
-.resume-link{
-    color: black;
-    text-decoration:underline;
-}
-
-.stories{
-    margin:0;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    .contactlist{
+    list-style-type: none;
     padding:0;
-}
-
-.stories a{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
+    margin-top: 65%;
 }
- 
-.contents{
-    
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-a.darken {
-    display: inline-block;
-    background: black;
-    padding: 0;
-    position: relative;
-}
-
-a.darken img {
-    display: block;
-    
-    -webkit-transition: all 0.2s linear;
-       -moz-transition: all 0.2s linear;
-        -ms-transition: all 0.2s linear;
-         -o-transition: all 0.2s linear;
-            transition: all 0.2s linear;
-}
-
-a.darken:hover img {
-    opacity: 0.5;
-            
-}
-
-a.darken span{
-    font-family: 'Cabin', sans-serif;
-    font-style: italic;
-    font-size: 150% ;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: rgba(255, 255, 255, 0);
-     -webkit-transition: all 0.2s linear;
-       -moz-transition: all 0.2s linear;
-        -ms-transition: all 0.2s linear;
-         -o-transition: all 0.2s linear;
-            transition: all 0.2s linear;
-}
-
-a.darken:hover span{
-    color: rgba(255, 255, 255, 1);
-     -webkit-transition: all 0.2s linear;
-       -moz-transition: all 0.2s linear;
-        -ms-transition: all 0.2s linear;
-         -o-transition: all 0.2s linear;
-            transition: all 0.2s linear;
-}
-
- 
- 
- 
-.contacts{
-    margin-top:10rem;
-}
- 
-
-.contacts ul li{
-     
-    display: inline;
-    padding: 0;
-}
- 
-.contacts ul li a{
-    padding: 0; 
-    text-decoration: none;
-}   
-    
-
- .iconwrapper {
-    
-    display: inline-block;
-    width: 12%;
-    height: auto;
-    padding 0;
-    position: relative;
-}
- 
