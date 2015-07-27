@@ -4,154 +4,126 @@
 
 <head>
     <title> Erica.M.Peterson </title>
-     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-
-<link href='http://fonts.googleapis.com/css?family=Cabin:400italic|Poiret+One' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<meta name="viewport" content="initial-scale=1">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Calling my customized style rules -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Loading chosen fonts to user's compueter. Hosted by Google -->
+        <link href='http://fonts.googleapis.com/css?family=Cabin:400italic|Poiret+One' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- defining viewport -->    
+        <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" >
+    <!-- defining character types to use -->
+        <meta charset="UTF-8">
 </head>
 
-    <body>
+<!-- beginning of body or main content area of html doc -->   
+<body class="portfoliobody">
         
-<div class="navbar navbar-default">
-    <div class="navbar-header"><a class="navbar-brand" href="index.html">Erica M. Peterson</a>
- <a class="navbar-toggle"
-        data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar" contenteditable="false"></span>
-      </a>
+    <!-- constructing nav bar using bootstrap. Code then modified to change style -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display, removed the active class style per client request no style of active link -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Erica M. Peterson</a>
+            </div>
 
-    </div>
-    <div class="navbar-collapse collapse" aria-expanded="true" style="height: 0.909090876579285px;">
-        <ul class="nav navbar-nav">
-            <li><a href="about.html" class="test">About</a>
+    <!-- Collect the nav links, forms, and other content for toggling. removed current/active span to remove styling of current link -->
+            <div class="collapse navbar-collapse" id=".navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+       
+       
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+        
+        
+        
 
-            </li>
-            <li><a href="portfolio.html" class="">Portfolio</a>
-
-            </li>
-            <li><a href="contact.html" class="">Contact</a>
-
-            </li>
-        </ul>
-    </div>
-</div>
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-    <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-     
-      
-  </ol>
+    <div id="portfolioimages" class="carousel slide" data-ride="carousel">
+    <!-- Indicators creates the circles under the image to let you know where you are within the carousel-->
+        <ol class="carousel-indicators">
+            <li data-target="portfolioimages" data-slide-to="0" class="active"></li>
+            <li data-target="portfolioimages" data-slide-to="1"></li>
+            <li data-target="portfolioimages" data-slide-to="2"></li>
+            <li data-target="portfolioimages" data-slide-to="3"></li>
+            <li data-target="portfolioimages" data-slide-to="4"></li>
+            <li data-target="portfolioimages" data-slide-to="5"></li>
+            <li data-target="portfolioimages" data-slide-to="6"></li>
+            <li data-target="portfolioimages" data-slide-to="7"></li>
+            <li data-target="portfolioimages" data-slide-to="8"></li>
+        </ol>
  
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <a href="http://wfpl.org/forget-greenhouse-gas-rules-nearly-60-percent-kentuckys-coal-plants-may-gone-2040/" target="_blank" >          <img src="img/fracking.jpg" alt="..."></a>
-        <div class="captionholder">
-        <div class="carousel-caption">
-          <h2>Is Fracking Coming to the Cumberlands?</h2>
-      </div>
-      </div>
-    </div>
-    
-      <div class="item">
-      <a href="http://wfpl.org/forget-greenhouse-gas-rules-nearly-60-percent-kentuckys-coal-plants-may-gone-2040/" target="_blank" >
-      <img src="img/greenhouse.jpg" alt="...">
-      <div class="carousel-caption">
-          <h3>Forget Greenhouse Gas Rules Nearly 60 Percent of Kentuckys Coal Plants May Be Gone by 2040</h3>
-      </div>
-    </div>
-    
-      <div class="item">
-      <a href="http://wfpl.org/kentucky-doesnt-have-any-more-working-union-coal-miners/" target="_blank" >
-      <img src="img/miners.jpg" alt="...">
-      <div class="carousel-caption">
-          <h3>Kentucky Doesn’t Have Any More Working Union Coal Miners</h3>
-      </div>
-    </div>
-          
-      <div class="item">
-        <a href="http://wfpl.org/hollowed-mountains-now-hollowed-towns-coal-eastern-kentucky/" target="_blank" >
-      <img src="img/Hollowed.jpg" alt="...">
-      <div class="carousel-caption">
-          <h3>Hollowed Mountains, Now Hollowed Towns: Coal in Eastern Kentucky</h3>
-      </div>
-    </div>
-          
-      <div class="item">
-        <a href="http://www.npr.org/sections/health-shots/2012/07/25/157359488/as-pain-pills-change-abusers-move-to-new-drugs" target="_blank" >
-      <img src="img/pills.jpg" alt="...">
-      <div class="carousel-caption">
-          <h3>As Pain Pills Change, Abusers Move To New Drugs</h3>
-      </div>
-    </div>
-          
-      <div class="item">
-        <a href="http://wfpl.org/rubbertown-and-health-whole-series-0/" target="_blank" >
-      <img src="img/rubber.jpg" alt="...">
-      <div class="carousel-caption">
-          <h3>Rubbertown and Health: The Whole Series</h3>
-      </div>
-    </div>
-          
-      <div class="item">
-        <a href="http://wfpl.org/black-carbon-series-how-traffic-exhaust-affects-climate-change-and-louisvilles-health/" target="_blank" >
-      <img src="img/traffic.jpg" alt="...">
-      <div class="carousel-caption">
-          <h3>Black Carbon Series: How Traffic Exhaust Affects Climate Change and Louisville’s Health</h3>
-      </div>
-    </div>
-          
-      <div class="item">
-        <a href="http://www.politico.com/magazine/story/2014/12/louisville-heat-tree-cover-113424.html#.VYBnKUb26dw" target="_blank" >
-      <img src="img/tree%20politico.jpg" alt="...">
-      <div class="carousel-caption">
-          <h3>How the Fastest-Warming City in the Country Is Cooling Off</h3>
-      </div>
-    </div>
-          
-      <div class="item">
-        <a href="http://wfpl.org/challenges-increasing-louisvilles-tree-canopy/" target="_blank" >
-      <img src="img/trees.jpg" alt="...">
-      <div class="carousel-caption">
-          <h3>The Challenges of Increasing Louisville’s Tree Canopy</h3>
-      </div>
-    </div>
-  </div>
- 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div> <!-- Carousel -->
+    <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+        <!-- images are links to Ericas stories. target_blank used to open link in new page -->
+                <a href="http://wfpl.org/forget-greenhouse-gas-rules-nearly-60-percent-kentuckys-coal-plants-may-gone-2040/" target="_blank" ><img src="img/fracking.jpg" alt="Picture of large truck at a fracking site"></a>
+                    <div class="captionholder">
+                        <div class="carousel-caption"><h3>Is Fracking Coming to the Cumberlands?</h3></div>
+                    </div>
+            </div>
+            <div class="item">
+                <a href="http://wfpl.org/forget-greenhouse-gas-rules-nearly-60-percent-kentuckys-coal-plants-may-gone-2040/" target="_blank" ><img src="img/greenhouse.jpg" alt="Picture of stacks sending heavy steam in the air">
+                    <div class="carousel-caption"><h3>Forget Greenhouse Gas Rules Nearly 60 Percent of Kentuckys Coal Plants May Be Gone by 2040</h3></div>
+            </div>
 
+            <div class="item">
+                <a href="http://wfpl.org/kentucky-doesnt-have-any-more-working-union-coal-miners/" target="_blank" ><img src="img/miners.jpg" alt="Picture of a public window with various decals on it, inclduing coal company logos">
+                    <div class="carousel-caption"><h3>Kentucky Doesn’t Have Any More Working Union Coal Miners</h3></div>
+            </div>
 
+            <div class="item">
+                <a href="http://wfpl.org/hollowed-mountains-now-hollowed-towns-coal-eastern-kentucky/" target="_blank" ><img src="img/Hollowed.jpg" alt="A picture of the back glass of a pickup cab that has various decals. One decal is the images of two miners which reads,"like father, like son"">
+                    <div class="carousel-caption"><h3>Hollowed Mountains, Now Hollowed Towns: Coal in Eastern Kentucky</h3></div>
+            </div>
 
+            <div class="item">
+                <a href="http://www.npr.org/sections/health-shots/2012/07/25/157359488/as-pain-pills-change-abusers-move-to-new-drugs" target="_blank" ><img src="img/pills.jpg" alt="A picture of pills">
+                    <div class="carousel-caption"><h3>As Pain Pills Change, Abusers Move To New Drugs</h3></div>
+            </div>
 
+            <div class="item">
+                <a href="http://wfpl.org/rubbertown-and-health-whole-series-0/" target="_blank" ><img src="img/rubber.jpg" alt="A picture of a red tower">
+                    <div class="carousel-caption"><h3>Rubbertown and Health: The Whole Series</h3></div>
+            </div>
 
- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    
-<script src="js/carousel.js"></script>
-    
+            <div class="item">
+                <a href="http://wfpl.org/black-carbon-series-how-traffic-exhaust-affects-climate-change-and-louisvilles-health/" target="_blank" >
+              <img src="img/traffic.jpg" alt="Slow shutter speed picture of cars on a highway at night. Appears as trails of taillights and headlights">
+                    <div class="carousel-caption"><h3>Black Carbon Series: How Traffic Exhaust Affects Climate Change and Louisville’s Health</h3></div>
+            </div>
+
+            <div class="item">
+                <a href="http://www.politico.com/magazine/story/2014/12/louisville-heat-tree-cover-113424.html#.VYBnKUb26dw" target="_blank" >
+              <img src="img/tree%20politico.jpg" alt="Picture of two people planting a very small, thin tree">
+                <div class="carousel-caption"><h3>How the Fastest-Warming City in the Country Is Cooling Off</h3></div>
+            </div>
+
+            <div class="item">
+                <a href="http://wfpl.org/challenges-increasing-louisvilles-tree-canopy/" target="_blank" ><img src="img/trees.jpg" alt="Picture of a man working in a field of recently planted, young trees">
+                    <div class="carousel-caption"><h3>The Challenges of Increasing Louisville’s Tree Canopy</h3></div>
+            </div>
+        </div>
+
+      <!-- Controls -->
+        <a class="left carousel-control" href="#portfolioimages" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#portfolioimages" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div> <!-- Carousel -->
 </html>

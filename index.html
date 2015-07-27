@@ -4,64 +4,75 @@
 
 <head>
     <title> Erica.M.Peterson </title>
-     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-
-<link href='http://fonts.googleapis.com/css?family=Cabin:400italic|Poiret+One' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<meta name="viewport" content="initial-scale=1">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Calling my customized style rules -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Loading chosen fonts to user's compueter. Hosted by Google -->
+        <link href='http://fonts.googleapis.com/css?family=Cabin:400italic|Poiret+One' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- defining viewport -->    
+        <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" >
+    <!-- defining character types to use -->
+        <meta charset="UTF-8">
 </head>
 
-    <body class="titlebody">
+<!-- beginning of body or main content area of html doc -->   
+<body class="titlebody">
         
-<div class="navbar navbar-default">
-    <div class="navbar-header"><a class="navbar-brand" href="index.html">Erica M. Peterson</a>
- <a class="navbar-toggle"
-        data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar" contenteditable="false"></span>
-      </a>
+    <!-- constructing nav bar using bootstrap. Code then modified to change style -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display, removed the active class style per client request no style of active link -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Erica M. Peterson</a>
+            </div>
 
-    </div>
-    <div class="navbar-collapse collapse" aria-expanded="true" style="height: 0.909090876579285px;">
-        <ul class="nav navbar-nav">
-            <li><a href="about.html" class="test">About</a>
+    <!-- Collect the nav links, forms, and other content for toggling. removed current/active span to remove styling of current link -->
+            <div class="collapse navbar-collapse" id=".navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+       
+       
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+        
+        
 
-            </li>
-            <li><a href="portfolio.html" class="">Portfolio</a>
-
-            </li>
-            <li><a href="contact.html" class="">Contact</a>
-
-            </li>
-        </ul>
-    </div>
-</div>
- 
-<div class="summaryholder">
-    <p class="summary">Erica Peterson is a nationally-recognized environmental journalist living
-    in Louisville, Ky. Her work can be heard on public radio stations in Louisville
-    and throughout the region, as well as nationally.
-    <br class="">
-    <br class="">Appalachia is a region that has long-struggled with environmental issues--from
-    the effects of mining and burning coal to the legacy of now-defunct industrial
-    sites--and Erica's coverage plays an essential role in informing listeners
-    about the complicated relationship between energy and development decisions
-    and the natural world.
-    <br class="">
-    <br class="">Her stories focus on the federal, state and local energy policy decisions
-    that affect Kentuckians, as well as the environmental consequences.</p>
+    <!-- created div to hold "summary paragraph" about Erica for styling reasons -->
+        <div class="summaryholder">
+            <p class="summary">Erica Peterson is a nationally-recognized environmental journalist living
+                in Louisville, Ky. Her work can be heard on public radio stations in Louisville
+                and throughout the region, as well as nationally.
+                <br>
+                <br>
+                Appalachia is a region that has long-struggled with environmental issues--from
+                the effects of mining and burning coal to the legacy of now-defunct industrial
+                sites--and Erica's coverage plays an essential role in informing listeners
+                about the complicated relationship between energy and development decisions
+                and the natural world.
+                <br>
+                <br>
+                Her stories focus on the federal, state and local energy policy decisions
+                that affect Kentuckians, as well as the environmental consequences.
+                <br>
+                <br>
+            </p>
     
-    </div>
-        
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        </div>
+
+</body>
     
 </html>

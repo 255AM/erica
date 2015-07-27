@@ -1,23 +1,14 @@
 /* CSS used here will be applied after bootstrap.css */
 
-/* CSS used here will be applied after bootstrap.css */
+
 html{
-     height:100%;
-    
-     
-    
-     
-     
-     
-     
+    overflow: hidden;
 }
 
 .navbar{ 
-     background-color: #C7C3BD;
+    background-color: #C7C3BD;
     background-image: none;
-    opacity: .8;
     margin-bottom: 0;
-     
 }
 
 .navbar-default {
@@ -27,7 +18,8 @@ html{
 }
 .navbar-default .navbar-brand  {
   color: #000;
-  text-align: center;    
+  text-align: center;  
+  
 }
 
 
@@ -35,6 +27,7 @@ html{
 .navbar-default .navbar-nav li a {
   color: #000;
   font-weight: 800;
+    
 
 }
 .navbar-brand{
@@ -49,7 +42,7 @@ html{
     font-size: 2rem;
 }
 
-     
+    
 .titleimg{
         margin-top: 2%;
     	display: block;
@@ -64,42 +57,35 @@ html{
 
 
 .titlebody {
-	background: url('../img/louisville%20coal.jpg') no-repeat center center fixed;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
+    height: 100%;
+	background: url('../img/louisville%20coal.jpg') no-repeat center top fixed;
+    -webkit-background-size:  cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	color:#fff;
   	background-color:#333;
-    
-  	 
 }
  
     
 .summaryholder{
-    width: 100%;
+     
     background-color:rgba(0,0,0,0.0);
+     
 }
     
 
   .summary{
     color: white;
-    margin-top:  24%;
-      margin-bottom: 0;
+    margin-top:  23%;
     margin-left: 2%;
     margin-right: 60%;
     text-align: left;
     font-size: 1.6rem;
-     
-
-    
 }
    
     
-.row{
-     
-     
-}
+ 
  
 .col-md-5{
     height: 100%;
@@ -110,33 +96,31 @@ html{
     margin:0; 
     padding:0;
     background-color: black;
-    color:antiquewhite;
+    color:white;
 }
 
-    .about{
+.about{
         margin: 4%;
         background-color: black;
+        font-size: 1.6rem;
          
     }
     
- .aboutbody{
+.aboutbody{
      
      margin:0;
      padding: 0;
-     overflow-y: scroll;
+     overflow-y: hidden;
      
  }
 
-
-.contactbody {
-	background: url("../img/current.JPG") no-repeat center center fixed;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
-	color:#fff;
-  	background-color:#333;
+.resume{
+    width:100%;
+    height: 100%;
 }
+
+
+ 
 
  
 
@@ -145,6 +129,7 @@ html{
 .carousel .item {
     width: 100%; /*slider width*/
     height: 100%; /*slider height*/
+    background-color: black;
 }
 .carousel .item img {
     width: 100%; /*img width*/
@@ -163,28 +148,80 @@ html{
         color:silver;
     background-color:rgba(0,0,0,0.7);
     padding-top: 0;
-         
-        
 }
-    
 
-.contactlist{
+.contactbody {
+    height:100%;
+	background: url("../img/current.JPG") no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color:#fff;
+  	background-color:#333;
+}
+
+
+ 
+
+      .contactlist{
     list-style-type: none;
-    margin-top: 12%;
+    text-align: center;
+    margin-top: 10%;
 }
      
  .contactlist li{
      display: inline;
+     padding: 2rem;
+      
  }
      
 
 
 img{
-     background-color: rgba(255,255,255,0.3)
+     background-color: rgba(125,255,100, 0.3)
  }
  
-/*full width container*/
-@media (max-width: 767px) {
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+ 
+   .contactlist{
+    list-style-type: none;
+    padding:;
+    text-align: center;
+    margin-top: 10%;
+}   
+    
+    .contactlist li{
+     display: inline;
+     padding: 1rem;
+      
+ }
+    }
+
+
+
+/*  iphone 5 base Mobile Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    
+    html{
+     height:100%;
+     overflow-y: auto;
+     background-color: black;
+     }
+    
     .block {
         margin-left: -20px;
         margin-right: -20px;
@@ -196,7 +233,7 @@ img{
 }
 
     .navbar-brand{
-  	font-size: 3rem;
+  	font-size: 2.6rem;
     font-weight: 800;
     margin-left: 1rem;
     }
@@ -209,12 +246,12 @@ img{
 
   .summary{
     color: white;
-    margin-top:  0%;
-      margin-bottom: 0;
+    margin-top:  30%;
+    margin-bottom: 0;
     margin-left: 2%;
     margin-right: 2%;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.5rem;
      
 
     
@@ -225,16 +262,104 @@ img{
      margin:0;
      padding: 0;
      overflow-y: auto;
+    
     }
     
      .about{
-        margin: 0%;
+        margin: 0% 2%;
+        font-size: 2rem;
         background-color: black;
      }
+    
+    
+    
+    .carousel .item {
+        
+    
+    width: 100%; /*slider width*/
+    height: 40rem; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+    height: 100%;
+}
+/*add some makeup*/
+.carousel .carousel-control {
+    background: none;
+    border: none;
+    
+}
+
+ 
+
+.carousel-caption{
+    
+    color:darkgray;
+    background-color:rgba(0,0,0,0.7);
+    padding-top: 0;
+         
+        
+}
 
     .contactlist{
     list-style-type: none;
     padding:0;
     text-align: center;
     margin-top: 65%;
+}
+    
+       .contactlist li{
+     display: inline;
+     padding: .5rem;
+      
+ }
+      
+  }
+
+/* S5 Base Landscape */
+@media screen 
+  and (device-width: 640px) 
+  and (device-height: 360px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+      
+   html{
+       overflow-y: auto;   
+   }
+      
+.about{
+    margin: 4%;
+     
+    }
+    
+ .aboutbody{
+     
+     margin: 0;
+     padding: 0;
+     overflow-y: scroll;
+     background-color: black;
+     
+ }
+      .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    
+   .img-responsive{
+       margin-left:auto;
+       margin-right:auto;
+}
+      
+       .contactlist{
+    list-style-type: none;
+    padding:0;
+    text-align: center;
+    margin-top: 10%;
+}
+      
+       .contactlist li{
+     display: inline;
+     padding: 1rem;
+      
+ }
 }
