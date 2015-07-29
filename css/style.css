@@ -5,56 +5,57 @@ html{
     overflow: hidden;
 }
 
+/****************************************************************************
+       Custom Styling of Navigation bar 
+****************************************************************************/
+
 .navbar{ 
     background-color: #C7C3BD;
-    background-image: none;
+    background-image: none;  
     margin-bottom: 0;
 }
 
 .navbar-default {
     font-family: 'Poiret One', cursive;  
     text-decoration: none;
-   
 }
+
 .navbar-default .navbar-brand  {
-  color: #000;
-  text-align: center;  
-  
+    color: #000;
+    text-align: center; 
 }
-
-
 
 .navbar-default .navbar-nav li a {
-  color: #000;
-  font-weight: 800;
-    
-
+    color: #000;
+    font-weight: 800;
 }
+
 .navbar-brand{
   	font-size: 5rem;
     font-weight: 800;
     margin-left: 1rem;
-
-     
 }
+
 .navbar-nav{
     float: right;
     font-size: 2rem;
 }
 
-    
 .titleimg{
-        margin-top: 2%;
-    	display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    margin-top: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
- 
 .row ul li{
     display:inline;
-  }
+}
 
+
+/****************************************************************************
+       Styling of title page or index 
+****************************************************************************/
 
 .titlebody {
     height: 100%;
@@ -67,15 +68,11 @@ html{
   	background-color:#333;
 }
  
-    
 .summaryholder{
-     
     background-color:rgba(0,0,0,0.0);
-     
 }
     
-
-  .summary{
+.summary{
     color: white;
     margin-top:  23%;
     margin-left: 2%;
@@ -84,72 +81,68 @@ html{
     font-size: 1.6rem;
 }
    
-    
  
+/****************************************************************************
+       Styling of about page. Creates a row of two colums responsive 
+****************************************************************************/   
  
 .col-md-5{
     height: 100%;
     padding:0;
     margin:0;
-    }
+}
+
 .col-md-7{
-    margin:0; 
+    margin:0;
     padding:0;
     background-color: black;
     color:white;
 }
 
 .about{
-        margin: 4%;
-        background-color: black;
-        font-size: 1.6rem;
-         
-    }
+    margin: 4%;
+    background-color: black;
+    font-size: 1.6rem;
+}
     
 .aboutbody{
-     
      margin:0;
      padding: 0;
-     overflow-y: hidden;
-     
- }
-
-.resume{
-    width:100%;
-    height: 100%;
 }
 
 
- 
-
- 
-
- 
-
+/****************************************************************************
+Define style of sliding carousel used to display images on portfolio page 
+****************************************************************************/   
+  
 .carousel .item {
     width: 100%; /*slider width*/
     height: 100%; /*slider height*/
     background-color: black;
 }
+
 .carousel .item img {
     width: 100%; /*img width*/
     height: auto;
 }
-/*add some makeup*/
+ 
 .carousel .carousel-control {
     background: none;
     border: none;
     
 }
 
- 
-
 .carousel-caption{
-        color:silver;
+    color:silver;
     background-color:rgba(0,0,0,0.7);
     padding-top: 0;
 }
 
+
+/****************************************************************************
+       Styling of contact page.  
+****************************************************************************/   
+ 
 .contactbody {
     height:100%;
 	background: url("../img/current.JPG") no-repeat center top fixed;
@@ -161,29 +154,26 @@ html{
   	background-color:#333;
 }
 
-
- 
-
-      .contactlist{
+.contactlist{
     list-style-type: none;
     text-align: center;
     margin-top: 10%;
 }
      
- .contactlist li{
-     display: inline;
-     padding: 2rem;
-      
- }
+.contactlist li{
+    display: inline;
+    padding: 2rem;
+}
      
-
-
 img{
-     background-color: rgba(125,255,100, 0.3)
+     background-color: rgba(255,255,255, 0.9)
  }
  
 
-
+/****************************************************************************
+       Responsive styling fixes for mobile devices in landscape
+****************************************************************************/   
+ 
 /* Landscape */
 @media only screen 
   and (min-device-width: 320px) 
@@ -194,7 +184,6 @@ img{
  
    .contactlist{
     list-style-type: none;
-    padding:;
     text-align: center;
     margin-top: 10%;
 }   
@@ -202,10 +191,12 @@ img{
     .contactlist li{
      display: inline;
      padding: 1rem;
-      
- }
-    }
+}
+}
 
+/****************************************************************************
+       Responsive styling fixes for Iphone(5) portrait
+****************************************************************************/   
 
 
 /*  iphone 5 base Mobile Portrait */
@@ -216,35 +207,35 @@ img{
   and (orientation: portrait) {
 
     
-    html{
-     height:100%;
-     overflow-y: auto;
-     background-color: black;
-     }
+html{
+    height:100%;
+    overflow-y: auto;
+    background-color: black;
+}
     
     .block {
         margin-left: -20px;
-        margin-right: -20px;
+       margin-right: -20px;
     }
     
    .img-responsive{
-       margin-left:auto;
-       margin-right:auto;
+     margin-left:auto;
+     margin-right:auto;
 }
 
-    .navbar-brand{
+.navbar-brand{
   	font-size: 2.6rem;
     font-weight: 800;
     margin-left: 1rem;
-    }
+}
     
-    .summaryholder{
+.summaryholder{
     width: 100%;
     background-color:rgba(0,0,0,0.4);
 }
     
 
-  .summary{
+.summary{
     color: white;
     margin-top:  30%;
     margin-bottom: 0;
@@ -252,69 +243,59 @@ img{
     margin-right: 2%;
     text-align: left;
     font-size: 1.5rem;
-     
-
-    
 }
     
-    .aboutbody{
-      
-     margin:0;
-     padding: 0;
+.aboutbody{
+    margin:0;
+    padding: 0;
      overflow-y: auto;
+}
     
-    }
+.about{
+    margin: 0% 2%;
+    font-size: 2rem;
+    background-color: black;
+}
     
-     .about{
-        margin: 0% 2%;
-        font-size: 2rem;
-        background-color: black;
-     }
-    
-    
-    
-    .carousel .item {
-        
-    
+.carousel .item {
     width: 100%; /*slider width*/
     height: 40rem; /*slider height*/
 }
+
 .carousel .item img {
     width: 100%; /*img width*/
     height: 100%;
 }
-/*add some makeup*/
+ 
 .carousel .carousel-control {
     background: none;
     border: none;
-    
 }
-
- 
 
 .carousel-caption{
     
     color:darkgray;
     background-color:rgba(0,0,0,0.7);
     padding-top: 0;
-         
-        
 }
 
-    .contactlist{
+.contactlist{
     list-style-type: none;
     padding:0;
     text-align: center;
     margin-top: 65%;
 }
     
-       .contactlist li{
-     display: inline;
-     padding: .5rem;
-      
- }
-      
-  }
+.contactlist li{
+    display: inline;
+    padding: .5rem;
+}
+}
+
+/****************************************************************************
+       Responsive fixes for Android (S5) in landscape 
+****************************************************************************/   
+ 
 
 /* S5 Base Landscape */
 @media screen 
@@ -323,43 +304,161 @@ img{
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: landscape) {
       
-   html{
-       overflow-y: auto;   
-   }
+html{
+    overflow-y: auto;   
+}
+
+.aboutbody{
+     
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    background-color: black;
+}
       
 .about{
     margin: 4%;
-     
-    }
+}
     
- .aboutbody{
-     
-     margin: 0;
-     padding: 0;
-     overflow-y: scroll;
-     background-color: black;
-     
- }
-      .block {
-        margin-left: -20px;
-        margin-right: -20px;
-    }
+ 
+.block {
+    margin-left: -20px;
+    margin-right: -20px;
+}
     
-   .img-responsive{
-       margin-left:auto;
-       margin-right:auto;
+.img-responsive{
+    margin-left:auto;
+    margin-right:auto;
 }
       
-       .contactlist{
+.contactlist{
     list-style-type: none;
     padding:0;
     text-align: center;
     margin-top: 10%;
 }
       
-       .contactlist li{
-     display: inline;
-     padding: 1rem;
+.contactlist li{
+    display: inline;
+    padding: 1rem;
       
- }
 }
+}
+
+/****************************************************************************
+       Responsive fixes for Android (S5) in landscape 
+****************************************************************************/   
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+html{
+    height:100%;
+    overflow-y: auto;
+    background-color: black;
+}
+    
+.block {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+    
+.img-responsive{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.navbar-brand{
+  	font-size: 2.6rem;
+    font-weight: 800;
+    margin-left: 1rem;
+}
+    
+.summaryholder{
+     
+    background-color:rgba(0,0,0,0.4);
+}
+    
+.summary{
+    color: white;
+    margin-top:  23%;
+    margin-left: 2%;
+    margin-right: 60%;
+    text-align: left;
+    font-size: 1.6rem;
+}
+ 
+.aboutbody{
+    margin:0;
+    padding: 0;
+    overflow-y: auto;
+    background-color:black;
+}
+    
+.about{
+    margin: 0% 2%;
+    font-size: 2rem;
+    background-color: black;
+}
+    
+.carousel .item {
+    width: 100%; /*slider width*/
+    height: 50rem; /*slider height*/
+    background-color:black;
+}
+
+.carousel .item img {
+    width: 100%; /*img width*/
+    height: 100%;
+}
+ 
+.carousel .carousel-control {
+    background: none;
+    border: none;
+}
+
+.carousel-caption{
+    color:darkgray;
+    background-color:rgba(0,0,0,0.7);
+    padding-top: 0;
+}
+
+.contactlist{
+    list-style-type: none;
+    padding:0;
+    text-align: center;
+    margin-top: 65%;
+}
+    
+.contactlist li{
+    display: inline;
+    padding: .5rem;
+}
+}
+  
+/* Landscape ipad 1,2 */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+.carousel .item {
+    width: 100%; /*slider width*/
+    height: 65rem; /*slider height*/
+    background-color:black;
+}
+ 
+.aboutbody{
+     background-color:black;
+}
+    
+.about{
+     background-color: black;
+}
+      
+  }
