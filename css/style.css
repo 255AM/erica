@@ -11,80 +11,116 @@ html{
 ****************************************************************************/
 
  .navbar{ 
-    background-color: black;
+    background-color: Black;
     background-image: none;  
     margin-bottom: 0;
-     border:none;
+    border:none;
+     
 }
 
 .navbar-default {
     font-family: 'Poiret One', cursive;  
     text-decoration: none;
+    border-radius: none;
+  
+     
+     
 }
 
 .navbar-default .navbar-brand  {
-    color: white;
+    color: white; 
     text-align: center; 
+    
+     
+     
+}
+
+.navbar-default .navbar-nav li a{
+    color: ghostwhite;
+    font-weight: 800;
+   
     
 }
 
-.navbar-default .navbar-nav li a {
-    color: white;
-    font-weight: 800;
+.navbar-default .navbar-brand:hover{
+    color: silver!important;
+     
+}
+
+.navbar-default .navbar-nav li a:hover{
+    color: silver!important;
+     
 }
 
 .navbar-brand{
   	font-size: 5rem;
     font-weight: 800;
     margin-left: 1rem;
+   
+     
 }
 
 .navbar-nav{
     float: right;
     font-size: 2rem;
+     
 }
 
-.titleimg{
-    margin-top: 2%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+ul.nav li a,   {
+    color: white;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: silver;
+}
+
+ul.nav li.active a {
+    color: silver;
 }
 
 .row ul li{
     display:inline;
+     
 }
 
+.container-fluid{
+    background-color:black;
+}
+
+ul.nav li.active a {
+    color: silver !important;
+    background-color: black !important;
+}
  
 /****************************************************************************
        Styling of title page or index 
 ****************************************************************************/
 
-.titlebody {
-    height: 100%;
-	background: url('../img/louisville%20coal.jpg') no-repeat center top fixed;
-    -webkit-background-size:  cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	color:#fff;
-  	background-color:#333;
-}
- 
-.summaryholder{
-    background-color:rgba(0,0,0,0.0);
-}
-    
 .summary{
-    color: black;
-    margin-top:  30%;
+    color: white;
+    margin:  6% 6% 6%;
     text-align: left;
-    font-size: 1.6rem;
-    background-color: rgba(255,255,255,0.3);
-    padding: 1.5rem 1.5rem;
+    font-size: 1.8rem;
+    
 }
-   
- 
+
+.col-md-3{
+    height: 100%;
+    padding:0;
+    margin:0;
+    background-color: black;
+    
+    
+}
+
+.col-md-9{
+    margin:0;
+    padding:0;
+    background-color: black;
+    color:white;
+}
+
+  
 /****************************************************************************
        Styling of about page. Creates a row of two colums responsive 
 ****************************************************************************/   
@@ -150,76 +186,80 @@ Define style of sliding carousel used to display images on portfolio page
        Styling of contact page.  
 ****************************************************************************/   
  
-.contactbody {
-    height:100%;
-	background: url("../img/current.JPG") no-repeat center top fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	color:#fff;
-  	background-color:#333;
+#site-wrapper {
+position: relative;
+overflow: hidden;
+width: 100%;
 }
 
-.contactlist{
-    list-style-type: none;
-    text-align: center;
+#site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+#big-sexy {
+    background-color: black;
+    color: white;
+    position: absolute;
     margin-top: 25%;
+    border:none;
+    border-radius: 0;
 }
-     
-.contactlist li{
-    display: inline;
-    padding: 4rem;
+
+
+#site-menu {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  margin-top: 0;
+  margin-left: -200px;
+  background-color: silver;
+  padding: 15px;
 }
-     
-img{
-     background-color: rgba(255,255,255, 1.0)
- }
- 
+
+#site-wrapper.show-nav #site-canvas {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+}
+
+.contacts{
+    list-style: none;
+    text-align: center;
+    padding:0;
+}
+
+
+
+
+
+
 
 /****************************************************************************
        Responsive styling fixes for mobile devices in landscape
 ****************************************************************************/   
  
 /* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+@media (max-width:1023px) and (min-width: 100px)
+{
 
- 
-.contactlist{
-    list-style-type: none;
-    text-align: center;
-    margin-top: 10%;
-}   
-    
-.contactlist li{
-    display: inline;
-    padding: 1rem;
-}
-}
-
-/****************************************************************************
-       Responsive styling fixes for Iphone(5) portrait
-****************************************************************************/   
-
-
-/*  iphone 5 base Mobile Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-    
 html{
     height:100%;
     overflow-y: auto;
     background-color: black;
 }
     
+.navbar{ 
+     
+    background-image: none;  
+    margin-bottom: 0;
+    border:none;
+}    
+ 
 .block {
     margin-left: -20px;
     margin-right: -20px;
@@ -236,21 +276,28 @@ html{
     margin-left: 1rem;
 }
     
-.summaryholder{
-    width: 100%;
-    background-color:rgba(0,0,0,0.4);
+ 
+.summary{
+    color: black;
+    margin:  6% 6% 6%;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.col-md-3{
+    height: 100%;
+    padding:0;
+    margin:0;
+}
+
+.col-md-9{
+    margin:0;
+    padding:0;
+    background-color: black;
+    color:white;
 }
     
-
-.summary{
-    color: white;
-    margin-top:  30%;
-    margin-bottom: 0;
-    margin-left: ;
-    margin-right: ;
-    text-align: left;
-    font-size: 1.5rem;
-}
+ 
     
 .aboutbody{
     margin:0;
@@ -264,13 +311,19 @@ html{
     background-color: black;
 }
     
+.col-md-5{
+    padding:0;
+    margin:0;
+    background-color: black;
+}
+    
 .carousel .item {
-    width: 100%; /*slider width*/
-    height: 40rem; /*slider height*/
+    width: 100%; /*slider width */
+    height: 28rem; /*slider height */
 }
 
 .carousel .item img {
-    width: 100%; /*img width*/
+    width: 100%; /*img width */
     height: 100%;
 }
  
@@ -285,184 +338,19 @@ html{
     padding-top: 0;
 }
 
-.contactlist{
-    list-style-type: none;
-    padding:0;
-    text-align: center;
-    margin-top: 65%;
-}
-    
-.contactlist li{
-    display: inline;
-    padding: .5rem;
-}
-}
-
-
-/****************************************************************************
-       Responsive fixes for Android (S5) in landscape 
-****************************************************************************/   
-
-/* S5 Base Landscape */
-@media screen 
-  and (device-width: 640px) 
-  and (device-height: 360px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-      
-html{
-    overflow-y: auto;   
-}
-
-.aboutbody{
-     
-    margin: 0;
-    padding: 0;
-    overflow-y: scroll;
-    background-color: black;
-}
-      
-.about{
-    margin: 4%;
-}
-    
  
-.block {
-    margin-left: -20px;
-    margin-right: -20px;
 }
+
+@media (max-width:310px)
+{
     
-.img-responsive{
-    margin-left:auto;
-    margin-right:auto;
-}
-      
-.contactlist{
-    list-style-type: none;
-    padding:0;
-    text-align: center;
-    margin-top: 10%;
-}
-      
-.contactlist li{
-    display: inline;
-    padding: 1rem;
-}
-}
-
-
-/****************************************************************************
-       Responsive fixes for Android (S5) in landscape 
-****************************************************************************/   
-
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-height: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-      
-html{
-    height:100%;
-    overflow-y: auto;
-    background-color: black;
-}
-    
-.block {
-    margin-left: -20px;
-    margin-right: -20px;
-}
-    
-.img-responsive{
-    margin-left:auto;
-    margin-right:auto;
-}
-
 .navbar-brand{
-  	font-size: 2.6rem;
+    font-size: 1rem;
     font-weight: 800;
     margin-left: 1rem;
 }
-    
-.summaryholder{
-    background-color:rgba(0,0,0,0.4);
-}
-    
-.summary{
-    color: white;
-    margin-top:  40%;
-    margin-left: ;
-    margin-right: %;
-    text-align: left;
-    font-size: 1.6rem;
-}
- 
-.aboutbody{
-    margin:0;
-    padding: 0;
-    overflow-y: auto;
-    background-color:black;
-}
-    
-.about{
-    margin: 0% 2%;
-    font-size: 2rem;
-    background-color: black;
-}
-    
-.carousel .item {
-    width: 100%; /*slider width*/
-    height: 50rem; /*slider height*/
-    background-color:black;
 }
 
-.carousel .item img {
-    width: 100%; /*img width*/
-    height: 100%;
-}
- 
-.carousel .carousel-control {
-    background: none;
-    border: none;
-}
 
-.carousel-caption{
-    color:darkgray;
-    background-color:rgba(0,0,0,0.7);
-    padding-top: 0;
-}
 
-.contactlist{
-    list-style-type: none;
-    padding:0;
-    text-align: center;
-    margin-top: 50%;
-}
-    
-.contactlist li{
-    display: inline;
-    padding: .5rem;
-}
-}
-  
-/* Landscape ipad 1,2 */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-      
-.carousel .item {
-    width: 100%; /*slider width*/
-    height: 65rem; /*slider height*/
-    background-color:black;
-}
- 
-.aboutbody{
-     background-color:black;
-}
-    
-.about{
-     background-color: black;
-}
-}
 

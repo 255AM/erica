@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Erica M. Peterson</a>
+                <a class="navbar-brand" class="active" href="index.html">Erica M. Peterson</a>
             </div>
 
     <!-- Collect the nav links, forms, and other content for toggling. removed current/active span to remove styling of current link -->
@@ -46,9 +46,11 @@
         
         
 
-    <!-- created div to hold "summary paragraph" about Erica for styling reasons -->
-        <div class="summaryholder">
-            <p class="summary">Erica Peterson is a nationally-recognized environmental journalist living
+    <!-- created a fluid container for responsiveness. created a roww with medium columns spanning the page. -->  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="summary">Erica Peterson is a nationally-recognized environmental journalist living
                 in Louisville, Ky. Her work can be heard on public radio stations in Louisville
                 and throughout the region, as well as nationally.
                 <br>
@@ -65,8 +67,10 @@
                 <br>
                 <br>
             </p>
-    
+            </div>
+            <div class="col-md-8"><img src="img/louisville%20coal.jpg" class="img-responsive" alt="Picture of barge on the Ohio River"></div>
         </div>
+    </div>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
