@@ -15,59 +15,45 @@ html{
     background-image: none;  
     margin-bottom: 0;
     border:none;
-     
 }
 
 .navbar-default {
     font-family: 'Poiret One', cursive;  
     text-decoration: none;
     border-radius: none;
-  
-     
-     
 }
 
 .navbar-default .navbar-brand  {
-    color: white; 
+    color: snow; 
     text-align: center; 
-    
-     
-     
 }
 
 .navbar-default .navbar-nav li a{
-    color: ghostwhite;
+    color: snow;
     font-weight: 800;
-   
-    
 }
 
 .navbar-default .navbar-brand:hover{
     color: silver!important;
-     
 }
 
 .navbar-default .navbar-nav li a:hover{
     color: silver!important;
-     
 }
 
 .navbar-brand{
   	font-size: 5rem;
     font-weight: 800;
     margin-left: 1rem;
-   
-     
 }
 
 .navbar-nav{
     float: right;
     font-size: 2rem;
-     
 }
 
 ul.nav li a,   {
-    color: white;
+    color: snow;
 }
 
 ul.nav li a:hover, ul.nav li a:active {
@@ -80,7 +66,6 @@ ul.nav li.active a {
 
 .row ul li{
     display:inline;
-     
 }
 
 .container-fluid{
@@ -92,16 +77,16 @@ ul.nav li.active a {
     background-color: black !important;
 }
  
+
 /****************************************************************************
        Styling of title page or index 
 ****************************************************************************/
 
 .summary{
-    color: white;
-    margin:  6% 6% 6%;
+    color: snow;
+    margin:  10% 6% 6%;
     text-align: left;
     font-size: 1.8rem;
-    
 }
 
 .col-md-3{
@@ -109,15 +94,13 @@ ul.nav li.active a {
     padding:0;
     margin:0;
     background-color: black;
-    
-    
 }
 
 .col-md-9{
     margin:0;
     padding:0;
     background-color: black;
-    color:white;
+    color:snow;
 }
 
   
@@ -135,7 +118,7 @@ ul.nav li.active a {
     margin:0;
     padding:0;
     background-color: black;
-    color:white;
+    color:snow;
 }
 
 .about{
@@ -151,7 +134,8 @@ ul.nav li.active a {
 
 
 /****************************************************************************
-Define style of sliding carousel used to display images on portfolio page 
+Define style of sliding carousel used to display images on portfolio page
+Carousel was recreated in recent update to demonstrate JQuery
 ****************************************************************************/   
   
  .portfoliobody{
@@ -161,7 +145,6 @@ Define style of sliding carousel used to display images on portfolio page
 .carousel .item {
     width: 100%; /*slider width*/
     height: auto; /*slider height*/
-    
 }
 
 .carousel .item img {
@@ -172,45 +155,44 @@ Define style of sliding carousel used to display images on portfolio page
 .carousel .carousel-control {
     background: none;
     border: none;
-    
 }
 
 .carousel-caption{
-    color:white;
+    color:snow;
     background-color:rgba(0,0,0,0.7);
     padding-top: 0;
 }
 
  
 /****************************************************************************
-       Styling of contact page.  
+Styling of contact page. Including an off-canvase slide menu utilizing JQuery
 ****************************************************************************/   
  
 #site-wrapper {
-position: relative;
-overflow: hidden;
-width: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 #site-canvas {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transition: 1s ease all;
-  transition: 1s ease all;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: 1s ease all;
+    transition: 1s ease all;
 }
 
 #big-sexy {
     background-color: black;
-    color: white;
+    color: snow;
     position: absolute;
     margin-top: 25%;
     border:none;
     border-radius: 0;
 }
-
 
 #site-menu {
   width: 200px;
@@ -233,18 +215,18 @@ width: 100%;
     padding:0;
 }
 
-
-
-
-
+.mail{
+    max-width: 10rem;
+    height: auto;
+}
 
 
 /****************************************************************************
-       Responsive styling fixes for mobile devices in landscape
+       Responsive styling fixes for mobile/tablet devices  
 ****************************************************************************/   
  
-/* Landscape */
-@media (max-width:1023px) and (min-width: 100px)
+/* all smaller than laptop */
+@media (max-width:1023px)
 {
 
 html{
@@ -254,7 +236,6 @@ html{
 }
     
 .navbar{ 
-     
     background-image: none;  
     margin-bottom: 0;
     border:none;
@@ -276,10 +257,9 @@ html{
     margin-left: 1rem;
 }
     
- 
 .summary{
-    color: black;
-    margin:  6% 6% 6%;
+    color: snow;
+    margin:  2% 2%;
     text-align: left;
     font-size: 1.8rem;
 }
@@ -294,10 +274,8 @@ html{
     margin:0;
     padding:0;
     background-color: black;
-    color:white;
+    color:snow;
 }
-    
- 
     
 .aboutbody{
     margin:0;
@@ -333,24 +311,55 @@ html{
 }
 
 .carousel-caption{
-    color:darkgray;
+    color:snow;
     background-color:rgba(0,0,0,0.7);
     padding-top: 0;
 }
 
- 
+    .image-responsive{
+        height:1000px;
+        width:auto;
+}
 }
 
-@media (max-width:310px)
-{
+
+/****************************************************************************
+    adjustments for smaller screens in portrait orientation 
+****************************************************************************/
+
+@media (max-width:627px) and (orientation: portrait){
     
-.navbar-brand{
-    font-size: 1rem;
-    font-weight: 800;
-    margin-left: 1rem;
-}
+.carousel .item {
+    width: 100%; /*slider width */
+    height: 40rem; /*slider height */
+}    
+    
+.mail{
+    max-width: 5rem;
+    height: auto;
+} 
 }
 
+
+/****************************************************************************
+      adjustments for smaller screens in landscape  
+****************************************************************************/
+
+@media (max-width:640px) and (orientation: landscape){
+    
+.carousel .item {
+    width: 100%; /*slider width */
+    height: 22rem; /*slider height */
+}    
+    
+.mail{
+    max-width: 5rem;
+    height: auto;
+} 
+} 
+
+
+ 
 
 
 
